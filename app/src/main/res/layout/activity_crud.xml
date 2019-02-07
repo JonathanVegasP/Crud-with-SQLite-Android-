@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activity.CrudActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/nome"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-condensed" />
+
+        <TextView
+            android:id="@+id/lblEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/lbl_e_mail"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:fontFamily="sans-serif-condensed" />
+
+        <TextView
+            android:id="@+id/lblProfissao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/lbl_profissao"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:fontFamily="sans-serif-condensed"
+            android:layout_marginStart="32dp" />
+
+        <TextView
+            android:id="@+id/lblContato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/lbl_contato"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:fontFamily="sans-serif-condensed"
+            android:layout_marginStart="32dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nome"
+            android:textColorHint="@android:color/black"
+            android:visibility="gone">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/e_mail"
+            android:textColorHint="@android:color/black"
+            android:visibility="gone">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/senha"
+            android:textColorHint="@android:color/black"
+            android:visibility="gone">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilProfissao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/profissao"
+            android:textColorHint="@android:color/black"
+            android:visibility="gone">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtProfissao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@android:color/black" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilContato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:hint="@string/contato"
+            android:textColorHint="@android:color/black"
+            android:visibility="gone">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtContato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="@android:color/black" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnAlterar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="@string/alterar"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/created_by_jonathan_vegas_peixoto"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif-condensed" />
+
+</LinearLayout>

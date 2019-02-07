@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CRUD</string>
+    <string name="login">Login</string>
+    <string name="e_mail">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="created_by_jonathan_vegas_peixoto">Created by Jonathan Vegas Peixoto</string>
+    <string name="nome">Nome</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="profissao">Profissão</string>
+    <string name="contato">Contato</string>
+    <string name="conta">Criar uma conta</string>
+    <string name="acessar">Acessar uma conta</string>
+    <string name="configuracoes">Configurações</string>
+    <string name="alterar">Alterar</string>
+    <string name="lbl_e_mail">E-mail: </string>
+    <string name="lbl_profissao">Profissão: </string>
+    <string name="lbl_contato">Contato: </string>
+    <string name="salvar">Salvar</string>
+    <string name="logo">logo</string>
+    <string name="sair">Sair</string>
+    <string name="excluir_conta">Excluir Conta</string>
+</resources>
